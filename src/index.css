@@ -8411,11 +8411,21 @@ a {
   padding-bottom: 0.25rem;
   border-style: solid;
   border-color: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .text:hover {
   color: #4fd1c5;
   border-color: #4fd1c5;
+  background-color: #e6fffa;
+  border-radius: 9999px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 @media (min-width: 640px) {

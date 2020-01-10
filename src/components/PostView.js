@@ -22,7 +22,7 @@ export default () => (
       <div>
           {data.posts.map(post => (
              <div class="max-w-xl mx-auto " key={post.id}>
-             <article class="border-t border-gray-300 p-3 hover:bg-gray-100 flex flex-wrap items-start cursor-pointer">
+             <article class="border-t border-gray-300 p-2 hover:bg-gray-100 flex flex-wrap items-start cursor-pointer">
                 <blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="light">
           
               <h5 class="font-bold">{post.author}</h5>

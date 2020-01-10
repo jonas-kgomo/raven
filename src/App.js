@@ -17,7 +17,7 @@ function App() {
   return (
     <body class="bg-white font-sans">
     
-      <div class="">
+     <div> 
         <div class="container mx-auto flex items-center py-10 px-15">
         
          <nav class="w-2/5">
@@ -47,33 +47,67 @@ function App() {
           
          </div>
           <button class="font-small bg-blue-500 hover:text-gray-100 focus:outline-none hover:bg-blue-600 hover:rounded-full text-white font-bold py-1 px-4  rounded-full">
-            Tweet
+          Login
        </button>
        </div>
           
         </div>
 
-       <header class="bg-purple-100 m-6 p-6 rounded shadow-lg">
-          <h1 class="text-teal-500 text-2xl">Welcome to Raven</h1>
-       </header>
-
- 
+       <div class="flex-inline justify-center bg-gray-200 m-auto p-4 w-1/2 rounded shadow-lg">
+       <div class="uppercase text-center py-3 tracking-wide text-md text-indigo-500 font-bold">Welcome to Raven</div>
+      
+      
+       </div>
  
 
 
 </div> 
 
-      
-        
-        <div class="flex-inline">
+
+
+<div class="w-2/3 container mx-auto flex-box mt-3 text-sm leading-normal">
+  <div class="pr-6  mt-8 mb-4">
+    <h1><a class="text-gray"> Raven </a></h1>
+  </div>
+
+  <div class="mb-4">
+     A website for rich-text and markdown rendered  ravens <i>(tweets)</i><a href="#" class="text-gray">@raven-tweets</a>
+  </div>
+
+
+<div class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71">
+  </path></svg><a href="#">https://github.com/jonas-kgomo/raven</a>
+  </div>
+
+
+  <div class="mb-4">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line>
+  <line x1="3" y1="10" x2="21" y2="10"></line></svg>
+  <a>Joined Aug 2020</a>
+  </div>
+
+  <div class="mb-4">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line>
+  <line x1="3" y1="10" x2="21" y2="10"></line></svg>
+  <a>Milstones</a>
+  </div>
+  </div>
+
+  
+  <div class="w-4/3">
+
         <TextField/>
         
         <PostView/>
-        </div>
-
-
         <Tweet/>
-        <Quotes/>
+        </div>
+  <div class="w-1/3">
+  <Quotes/>
+ 
+  
+</div>
+      
+
         
       
     </body>

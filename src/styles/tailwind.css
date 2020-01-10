@@ -22,11 +22,11 @@ a {
 
 
 .text {
-  @apply .text-gray-600 .text-sm .mr-4 .font-bold .pb-1 .border-solid .border-transparent ;
+  @apply .text-gray-600 .text-sm .mr-4 .font-bold .pb-1 .border-solid .border-transparent  .py-2 .px-2;
 }
 
 
 .text:hover {
- @apply .text-teal-400 .border-teal-400;
+ @apply .text-teal-400 .border-teal-400 .bg-teal-100 rounded-full .py-2 .px-2;
 }
 

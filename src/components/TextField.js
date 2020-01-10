@@ -20,7 +20,7 @@ export default class RichText extends Component {
 
 
 
-      <input class=" block w-full text-gray-700  py-1 px-4 focus:outline-none focus:text-gray " type="text" placeholder="What are you working on?">
+      <input class=" block w-full text-gray-700 focus:button-teal py-1 px-4 focus:outline-none focus:text-gray " type="text" placeholder="What are you working on?">
       </input>
       
       <div class="container flex items-center py-4 ">
