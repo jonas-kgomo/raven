@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project uses [Create React App](https://github.com/facebook/create-react-app), Tailswind, Okta, GraphQL, Express and Node.js
 
 ## Raven
 
