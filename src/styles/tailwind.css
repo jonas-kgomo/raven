@@ -4,7 +4,19 @@
 
 @tailwind utilities;
 
-.component {
-     color: teal;
-     background-color: bg-grey-light;
+a {
+    text-decoration: none;
+    color: text-teal;
+    
 }
+
+
+.top-nav {
+   @apply .text-gray-700 .text-sm .mr-4 .font-bold .pb-4 .border-b-2 .border-solid .border-transparent ;
+}
+
+
+.top-nav:hover {
+  @apply .text-teal-400 .border-teal-400;
+}
+

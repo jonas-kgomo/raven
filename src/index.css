@@ -8346,9 +8346,25 @@ video {
   z-index: auto;
 }
 
-.component {
-  color: teal;
-  background-color: bg-grey-light;
+a {
+  text-decoration: none;
+  color: text-teal;
+}
+
+.top-nav {
+  color: #4a5568;
+  font-size: 0.875rem;
+  margin-right: 1rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.top-nav:hover {
+  color: #4fd1c5;
+  border-color: #4fd1c5;
 }
 
 @media (min-width: 640px) {
@@ -39302,3 +39318,4 @@ video {
     z-index: auto;
   }
 }
+
