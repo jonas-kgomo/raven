@@ -23,16 +23,28 @@ export default () => (
             <h>Auhor</h>
 
         </div>
-
-        <div className="card">
+         
+       
+      
+      <div>
           {data.posts.map(post => (
-            <div key={post.id}>
+             <div class="max-w-xl mx-auto " key={post.id}>
+             <article class="border-t border-gray-400 p-3 hover:bg-gray-100 flex flex-wrap items-start cursor-pointer">
+                <blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="light">
+          
               <h5 class="font-bold">{post.author}</h5>
               <h>{post.body}</h>
+              </blockquote>     
+              </article>
             </div>
           ))}
-        </div>
       </div>
+
+  
+    </div>
+
+     
+    
     )}
   </Query>
 );
