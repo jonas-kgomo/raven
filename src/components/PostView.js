@@ -27,7 +27,7 @@ export default () => (
         <div className="card">
           {data.posts.map(post => (
             <div key={post.id}>
-              <h5>{post.author}</h5>
+              <h5 class="font-bold">{post.author}</h5>
               <h>{post.body}</h>
             </div>
           ))}

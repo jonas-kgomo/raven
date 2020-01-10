@@ -1,7 +1,10 @@
-
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
 
+.component {
+     color: teal;
+     background-color: bg-grey-light;
+}

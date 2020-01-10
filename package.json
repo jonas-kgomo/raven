@@ -21,11 +21,13 @@
     "tailwindcss": "^1.1.4"
   },
   "scripts": {
-    "start": "npm-run-all --parallel watch:server start:web",
+    "build:css": "postcss src/styles/tailwind.css -o src/index.css",
+    "watch:css": "postcss src/styles/tailwind.css -o src/index.css -w",
+    "start": "npm-run-all --parallel watch:server start:web watch:css",
     "start:web": "react-scripts start",
     "start:server": "node src/server",
     "watch:server": "nodemon --watch src/server src/server",
-    "build": "react-scripts build",
+    "build": "react-scripts build && build:css",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
