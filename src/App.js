@@ -3,11 +3,13 @@ import React from 'react';
 import './index.css';
 import PostView from './components/PostView';
 import Tweet from './components/Tweet';
+import TextField from './components/TextField';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faCheckSquare, faCoffee, faHome, faBook, faBookmark, faInbox, faBoxOpen, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import Quotes from './components/Qoutes';
 import user from './icons/user.png';
+
 
 
 
@@ -61,12 +63,14 @@ function App() {
 
 </div> 
 
-       
-        <p class="font-bold">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      
+        
+        <div class="flex-inline">
+        <TextField/>
         
         <PostView/>
+        </div>
+
 
         <Tweet/>
         <Quotes/>

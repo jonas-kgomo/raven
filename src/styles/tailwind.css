@@ -20,3 +20,13 @@ a {
   @apply .text-teal-400 .border-teal-400;
 }
 
+
+.text {
+  @apply .text-gray-600 .text-sm .mr-4 .font-bold .pb-1 .border-solid .border-transparent ;
+}
+
+
+.text:hover {
+ @apply .text-teal-400 .border-teal-400;
+}
+

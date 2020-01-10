@@ -8403,6 +8403,21 @@ a {
   border-color: #4fd1c5;
 }
 
+.text {
+  color: #718096;
+  font-size: 0.875rem;
+  margin-right: 1rem;
+  font-weight: 700;
+  padding-bottom: 0.25rem;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.text:hover {
+  color: #4fd1c5;
+  border-color: #4fd1c5;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

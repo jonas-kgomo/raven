@@ -17,19 +17,12 @@ export const GET_POSTS = gql`
 export default () => (
   <Query query={GET_POSTS}>
     {({ loading, data }) => !loading && (
-      <div>
-        <div>
-          
-            <h>Auhor</h>
-
-        </div>
-         
-       
+ 
       
       <div>
           {data.posts.map(post => (
              <div class="max-w-xl mx-auto " key={post.id}>
-             <article class="border-t border-gray-400 p-3 hover:bg-gray-100 flex flex-wrap items-start cursor-pointer">
+             <article class="border-t border-gray-300 p-3 hover:bg-gray-100 flex flex-wrap items-start cursor-pointer">
                 <blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="light">
           
               <h5 class="font-bold">{post.author}</h5>
@@ -39,10 +32,6 @@ export default () => (
             </div>
           ))}
       </div>
-
-  
-    </div>
-
      
     
     )}
