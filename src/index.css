@@ -8382,9 +8382,9 @@ video {
   z-index: auto;
 }
 
-a {
-  text-decoration: none;
-  color: text-teal;
+.a {
+  color: #4fd1c5;
+  font-size: 0.75rem;
 }
 
 .top-nav {

@@ -4,10 +4,8 @@
 
 @tailwind utilities;
 
-a {
-    text-decoration: none;
-    color: text-teal;
-    
+.a {
+    @apply .text-teal-400 .text-xs;
 }
 
 

@@ -65,48 +65,49 @@ function App() {
 
 
 
-<div class="w-2/3 container mx-auto flex-box mt-3 text-sm leading-normal">
-  <div class="pr-6  mt-8 mb-4">
-    <h1><a class="text-gray"> Raven </a></h1>
-  </div>
+<div class="container mx-auto flex mt-3 text-sm leading-normal">
+   <div class="flex -mx-2">
+      <div class="w-1/5 flex-inline px-2">
+      <div class="pr-6  mt-8 mb-4 ">
+            <h1><a class="text-gray"> Raven </a></h1>
+      </div>
 
-  <div class="mb-4">
-     A website for rich-text and markdown rendered  ravens <i>(tweets)</i><a href="#" class="text-gray">@raven-tweets</a>
-  </div>
-
-
-<div class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71">
-  </path></svg><a href="#">https://github.com/jonas-kgomo/raven</a>
-  </div>
+      <div class="mb-4 text-gray-500">
+         A website for rich-text and markdown rendered  ravens <i>(tweets)</i><a href="#" class="text-gray">@raven-tweets</a>
+      </div>
 
 
-  <div class="mb-4">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line>
-  <line x1="3" y1="10" x2="21" y2="10"></line></svg>
-  <a>Joined Aug 2020</a>
-  </div>
+      <div class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71">
+          </path></svg><a class="a" href="#">https://github.com/jonas-kgomo/raven</a>
+      </div>
 
-  <div class="mb-4">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line>
-  <line x1="3" y1="10" x2="21" y2="10"></line></svg>
-  <a>Milstones</a>
-  </div>
-  </div>
+
+      <div class="mb-4">
+       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line>
+       <line x1="3" y1="10" x2="21" y2="10"></line></svg>
+       <a>Joined Aug 2020</a>
+      </div>
+   
+      <div class="mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line>
+        <line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        <a>Milstones</a>
+      </div>
+    </div> 
 
   
-  <div class="w-4/3">
+       <div class="w-1/2 px-3">
 
-        <TextField/>
-        
-        <PostView/>
-        <Tweet/>
-        </div>
-  <div class="w-1/3">
-  <Quotes/>
- 
+          <TextField/>       
+          <PostView/>
+          <Tweet/>
+       </div>
+       <div class="w-1/3 px-3">
+          <Quotes/>
+       </div>
   
-</div>
-      
+   </div> 
+</div>      
 
         
       
