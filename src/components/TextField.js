@@ -39,7 +39,7 @@ export default class RichText extends Component {
       <span class='tooltip-text bg-teal-200 px-3 -mb-4 -ml-6 rounded'>slide-mode</span>
      </p>
 
-       <button class="bg-gray-200 hover:text-gray-100 focus:outline-none hover:bg-teal-500 hover:rounded-full text-white font-medium py-1  px-2  rounded-full">
+       <button class="bg-gray-400 hover:text-gray-100 focus:outline-none hover:bg-teal-500 hover:rounded-md text-white font-medium py-1  px-2  rounded-full">
             Tweet
        </button>
       </div>

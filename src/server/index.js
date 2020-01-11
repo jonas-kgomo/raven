@@ -5,8 +5,8 @@ const gql = require('graphql-tag');
 const { buildASTSchema } = require('graphql');
 
 const POSTS = [
-  { author: "John Doe", body: "Hello world" },
-  { author: "Jane Doe", body: "Hi, planet!" },
+  { author: "Raven Bird", body: "I am currently working on your OKR's" },
+  { author: "Jane Doe", body: "First Raven!" },
 ];
 
 // buildSchema is an abstract schema tree
