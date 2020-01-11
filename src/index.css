@@ -8428,6 +8428,18 @@ video {
   padding-right: 0.5rem;
 }
 
+.tooltip .tooltip-text {
+  visibility: hidden;
+  text-align: center;
+  padding: 2px 6px;
+  position: absolute;
+  z-index: 100;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
@@ -39523,4 +39535,3 @@ video {
     z-index: auto;
   }
 }
-

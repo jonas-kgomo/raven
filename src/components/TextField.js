@@ -32,8 +32,13 @@ export default class RichText extends Component {
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
       </a> 
      
-      <div class="w-3/5 justify-end items-center flex">
-      <a href="#" class="text"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></a> 
+      <div class="w-3/5 justify-end text-gray-600 items-center flex">
+      <p class='tooltip mr-2'>      
+      <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></a> 
+     
+      <span class='tooltip-text bg-teal-200 p-3 -mb-6 -ml-6 rounded'>slide-mode</span>
+     </p>
+
        <button class="bg-gray-200 hover:text-gray-100 focus:outline-none hover:bg-teal-500 hover:rounded-full text-white font-medium py-1  px-2  rounded-full">
             Tweet
        </button>
