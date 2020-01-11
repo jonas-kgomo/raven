@@ -5,14 +5,14 @@ This project uses [Create React App](https://github.com/facebook/create-react-ap
 
 
 
-Inspired by twitter, arXiv and [Qiita](https://qiita.com/), [sanity-preserver](https://www.youtube.com/watch?v=S2GY3gh6qC8&feature=youtu.be)
+Inspired by twitter, arXiv and [Qiita](https://qiita.com/), [sanity-preserver](https://www.youtube.com/watch?v=S2GY3gh6qC8&feature=youtu.be), [cent](https://beta.cent.co/)
 
 https://github.com/iandinwoodie/github-markdown-tailwindcss
 
 GitHub Flavored Markdown with Tailwind CSS components
 
 
-![img](./icons/raven.png)
+![alt text](https://github.com/jonas-kgomo/raven/blob/master/src/icons/raven.png "Raven")
 
 ### Case-Study
 
@@ -39,7 +39,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
+### Why? 
+
+Content-creator leverage 
+
+> for isntance Dillon Berger (@InertialObservr) is creating math/physics edu-content on twitter
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
