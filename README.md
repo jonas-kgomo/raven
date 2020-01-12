@@ -27,6 +27,8 @@ Seth Lloyd, Communal intelligence, intelligence acquired from communicating
 People contributing on one document for the community.
 It could be a book, a tutorial, or a blog.
 
+### LaTex | Markdown | Rich Text
+
 
 
 

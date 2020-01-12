@@ -36,7 +36,7 @@ export default class RichText extends Component {
       <p class='tooltip mr-2'>      
       <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></a> 
      
-      <span class='tooltip-text bg-teal-200 p-3 -mb-6 -ml-6 rounded'>slide-mode</span>
+      <span class='tooltip-text bg-teal-200 px-3 -mb-4 -ml-6 rounded'>slide-mode</span>
      </p>
 
        <button class="bg-gray-200 hover:text-gray-100 focus:outline-none hover:bg-teal-500 hover:rounded-full text-white font-medium py-1  px-2  rounded-full">

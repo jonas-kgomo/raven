@@ -71,13 +71,17 @@ export default class Trends extends Component {
      
      
       {/* Recommended JOBS */}
-      <div class="uppercase flex tracking-wide text-sm text-indigo-600 font-bold py-2 mr-4"> Hiring Teams
-     <div class="justify-end pl-4 text-xs">
-       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline>
-       </svg>
-     </div>
-    </div>
+  <div class="flex">
+      <div class="uppercase flex tracking-wide text-sm text-indigo-600 font-bold py-2 mr-4"> 
+      Hiring Teams
+     
 
+    </div>
+    <div class="justify-end py-2 mr-4 text-xs hover:text-underline">
+        <span> &middot;</span>
+        <span><a href="#" class="text-xs"> View All </a></span>
+     </div>
+  </div>
 
   <div class="flex">
      <div class="py-2">
