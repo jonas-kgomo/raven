@@ -2,10 +2,7 @@ This project uses [Create React App](https://github.com/facebook/create-react-ap
 
 ## Raven
 
-
-
-
-Inspired by twitter, arXiv and [Qiita](https://qiita.com/), [sanity-preserver](https://www.youtube.com/watch?v=S2GY3gh6qC8&feature=youtu.be), [cent](https://beta.cent.co/)
+> Inspired by twitter, arXiv and [Qiita](https://qiita.com/), [sanity-preserver](https://www.youtube.com/watch?v=S2GY3gh6qC8&feature=youtu.be), [cent](https://beta.cent.co/)
 
 https://github.com/iandinwoodie/github-markdown-tailwindcss
 
@@ -28,11 +25,6 @@ People contributing on one document for the community.
 It could be a book, a tutorial, or a blog.
 
 ### LaTex | Markdown | Rich Text
-
-
-
-
-
 
 
 Runs the app in the development mode.<br />
