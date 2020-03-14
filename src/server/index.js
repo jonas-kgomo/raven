@@ -6,7 +6,7 @@ const { buildASTSchema } = require('graphql');
 
 const POSTS = [
   { author: "Raven Bird", body: "I am currently working on your OKR's" },
-  { author: "Jane Doe", body: "First Raven!" },
+  { author: "Jane Doe",  body: "First Raven!" },
 ];
 
 // buildSchema is an abstract schema tree
@@ -45,7 +45,7 @@ const root = {
     let index = POSTS.length;
   
     if (id != null && id >= 0 && id < POSTS.length) {
-      if (POSTS[id].authorId !== authorId) return null;
+      // if (POSTS[id].authorId !== authorId)   return null;
   
       POSTS.splice(id, 1, post);
       index = id;

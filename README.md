@@ -1,12 +1,23 @@
 This project uses [Create React App](https://github.com/facebook/create-react-app), Tailswind, Okta, GraphQL, Express and Node.js
 
+
+
 ## Raven
+
+
+### TODO
+
+- click = i'm here [sound](https://youtu.be/eZ5iippq3rA)
+
+
 
 > Inspired by twitter, arXiv and [Qiita](https://qiita.com/), [sanity-preserver](https://www.youtube.com/watch?v=S2GY3gh6qC8&feature=youtu.be), [cent](https://beta.cent.co/)
 
-https://github.com/iandinwoodie/github-markdown-tailwindcss
+GitHub Flavored Markdown with Tailwind CSS components: 
 
-GitHub Flavored Markdown with Tailwind CSS components
+
+[Tailwindcss](https://github.com/iandinwoodie/github-markdown-tailwindcss)
+
 
 
 ![alt text](https://github.com/jonas-kgomo/raven/blob/master/src/icons/raven.png "Raven")
@@ -19,12 +30,12 @@ Seth Lloyd, Communal intelligence, intelligence acquired from communicating
 
 ### Features
 
-> Mass-Collaborated Tweets (microblog)
+#### Mass-Collaborated Tweets (microblog)
 
 People contributing on one document for the community.
 It could be a book, a tutorial, or a blog.
 
-### LaTex | Markdown | Rich Text
+#### LaTex | Markdown | Rich Text
 
 
 Runs the app in the development mode.<br />
@@ -33,7 +44,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### Why? 
+#### Why? 
 
 Content-creator leverage 
 
