@@ -5,30 +5,24 @@
 @tailwind utilities;
 
 .a {
-    @apply .text-teal-400 .text-xs;
+  @apply .text-teal-400 .text-xs;
 }
-
 
 .top-nav {
-   @apply .text-gray-700 .text-sm .mr-4 .font-bold .pb-4 .border-b-2 .border-solid .border-transparent ;
+  @apply .text-gray-700 .text-sm .mr-4 .font-bold .pb-4 .border-b-2 .border-solid .border-transparent;
 }
-
 
 .top-nav:hover {
   @apply .text-teal-400 .border-teal-400;
 }
 
-
 .text {
   @apply .text-gray-600 .text-sm .mr-4 .font-bold .pb-1 .border-solid .border-transparent  .py-2 .px-2;
 }
 
-
 .text:hover {
- @apply .text-teal-400 .border-teal-400 .bg-teal-100 rounded-full .py-2 .px-2;
+  @apply .text-teal-400 .border-teal-400 .bg-teal-100 rounded-full .py-2 .px-2;
 }
-
-
 
 .tooltip .tooltip-text {
   visibility: hidden;
@@ -39,4 +33,59 @@
 }
 .tooltip:hover .tooltip-text {
   visibility: visible;
+}
+
+.modal {
+  z-index: 1072;
+  @apply hidden fixed top-0 left-0 w-full h-full outline-none;
+}
+
+.modal.show {
+  @apply block text-gray-400;
+}
+
+.modal-backdrop {
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  @apply fixed bg-black top-0 left-0;
+}
+
+.form-control {
+  
+  @apply block text-gray-200 bg-transparent appearance-none py-1 px-4 leading-tight  border-l border-gray-200 w-full;
+}
+
+.modal-header {
+  @apply w-full border-b border-blue-400 text-blue-400 flex justify-between font-medium text-center m-2 p-2;
+}
+
+.modal-backdrop.fade {
+  @apply opacity-0;
+}
+
+.modal-backdrop.show {
+  @apply opacity-50;
+}
+
+.modal.fade .modal-dialog {
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: translate(0, -50px);
+  transform: translate(0, -50px);
+}
+
+.modal.show .modal-dialog {
+  -webkit-transform: none;
+  transform: none;
+}
+
+.modal-footer {
+  @apply w-full  flex justify-between font-medium text-center m-2 p-2;
+}
+
+
+.modal-footer .btn{
+  @apply flex font-light uppercase text-center inline-block py-1 px-2 text-xs  bg-blue-400 rounded-full text-blue-100;
 }

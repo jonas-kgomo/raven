@@ -24,10 +24,10 @@ class App extends Component {
 
 
     return (
-      <body class="bg-white font-sans">
+      <body class=" bg-white font-sans">
 
         <div>
-          <div class="container mx-auto flex items-center py-10 px-15">
+          <div class="z-0 container mx-auto flex items-center py-10 px-15">
 
             <nav class="w-2/5">
               <a href="#" class="top-nav"><FontAwesomeIcon icon={faHome} /> Home</a>
@@ -135,6 +135,7 @@ class App extends Component {
 
                         <button
                           className="my-2"
+                          target="raven"
                           color="primary"
                           onClick={() => this.setState({ editing: {} })}
                           class="bg-gray-400 hover:text-gray-100 focus:outline-none hover:bg-teal-500 hover:rounded-md text-white font-medium py-1  px-2  rounded-full">

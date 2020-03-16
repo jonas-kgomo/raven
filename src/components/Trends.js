@@ -38,9 +38,9 @@ export default class Trends extends Component {
           </h5> <h6 class="mt-1 leading-tight justify-end px-10 ml-10 text-xs text-gray-500">190K posts</h6>
          </div> 
          <div >
-          <h5 class="text-gray-600"> Trending in design</h5>
+          <h5 class="text-gray-600"> Trending in biology</h5>
           <h5 href="#" class="block mt-1 text-xs leading-tight font-semibold text-gray-900 hover:underline">
-          #affordance
+          #corona-virus
           </h5>
         </div>  
        <div >
