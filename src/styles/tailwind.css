@@ -52,7 +52,6 @@
 }
 
 .form-control {
-  
   @apply block text-gray-200 bg-transparent appearance-none py-1 px-4 leading-tight  border-l border-gray-200 w-full;
 }
 
