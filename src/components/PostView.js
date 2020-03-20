@@ -8,7 +8,10 @@ export const GET_POSTS = gql`
   query GetPosts {
     posts {
       id
-      author
+      author {
+        id
+        name
+      }
       body
     }
   }
@@ -34,7 +37,7 @@ const PostView = ({ canEdit, onEdit }) => (
               class="border-t border-gray-300 p-2 hover:bg-gray-100 flex flex-wrap items-start cursor-pointer">
               <blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="light">
 
-               <h5 class="font-bold">{post.author} <h class="font-normal text-gray-500"> @ {post.author} · Apr 7</h> </h5> 
+                <h5 class="font-bold">{post.author.name} <h class="font-normal text-gray-500"> @ {post.author.name} · Apr 7</h> </h5>
                 <p class="font-normal">{post.body}</p>
               </blockquote>
             </article>

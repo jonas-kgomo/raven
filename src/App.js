@@ -8,20 +8,27 @@ import TextField from './components/TextField';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faBook, faBookmark, faInbox, faBoxOpen, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import Quotes from './components/Qoutes';
-import user from './icons/user.png';
+//import user from './icons/user.png';
 import Trends from './components/Trends';
+import { Button, Container } from 'reactstrap';
 
+
+import withAuth from './withAuth';
 
 
 
 class App extends Component {
-
   state = {
     editing: null,
   };
-  render() {
-    const { editing } = this.state;
 
+  render() {
+
+    const { auth } = this.props;
+    if (auth.loading) return null;
+
+    const { user, login, logout } = auth;
+    const { editing } = this.state;
 
     return (
       <body class=" bg-white font-sans">
@@ -30,16 +37,16 @@ class App extends Component {
           <div class="z-0 container mx-auto flex items-center py-10 px-15">
 
             <nav class="w-2/5">
-              <a href="#" class="top-nav"><FontAwesomeIcon icon={faHome} /> Home</a>
+              <a href="/" class="top-nav"><FontAwesomeIcon icon={faHome} /> Home</a>
               <div class="group inline-block relative">
-                <a href="#" class="top-nav"><FontAwesomeIcon icon={faBook} /> arXiv </a>
+                <a href="/" class="top-nav"><FontAwesomeIcon icon={faBook} /> arXiv </a>
                 <div class="absolute inline-flex mx-auto hidden group-hover:block border-teal-500 group-hover:visible my-3 text-xs bg-gray-100  text-teal-500 border-t-4 border-gray py-3 px-4">
                   <p class="font-bold"><FontAwesomeIcon icon={faInfoCircle} />Info</p>
                   <p>Find latest research and papers</p>
                 </div>
               </div>
-              <a href="#" class="top-nav"><FontAwesomeIcon icon={faBookmark} /> Notes </a>
-              <a href="#" class="top-nav"><FontAwesomeIcon icon={faBoxOpen} /> Jobs </a>
+              <a href="/" class="top-nav"><FontAwesomeIcon icon={faBookmark} /> Notes </a>
+              <a href="/" class="top-nav"><FontAwesomeIcon icon={faBoxOpen} /> Jobs </a>
             </nav>
 
             <div class="w-3/5 flex justify-center">
@@ -55,9 +62,36 @@ class App extends Component {
                 <img src="https://i0.wp.com/seedsrevolution.com/wp-content/uploads/2019/10/7_avatar-512.png?w=512&ssl=1" alt="avatar" class="h-10 w-10 rounded-full" />
 
               </div>
-              <button class="font-small bg-indigo-500 hover:text-gray-100 focus:outline-none hover:bg-indigo-400 hover:rounded-full text-white font-bold py-1 px-4  rounded-full">
-                Login
-       </button>
+
+
+              <Container fluid>
+                {user ? (
+                  <div>
+                    <button
+                      class="bg-gray-300 hover:bg-blue-700   m-1 text-gray-900 font-semibold py-2 px-2 rounded-lg"
+
+                      onClick={() => this.setState({ editing: {} })}
+                    >
+                      New Post
+                   </button>
+                    <button
+                      class="bg-gray-900 hover:bg-blue-700   m-1 text-gray-100 font-semibold py-2 px-2 rounded-lg"
+                      onClick={() => logout()}
+                    >
+                      Sign Out (signed in as {user.name})
+                     </button>
+                  </div>
+                ) : (
+                    <button
+                      class="bg-gray-900 hover:bg-blue-700   m-1 text-gray-100 font-semibold py-1 px-2 rounded-lg"
+
+                      onClick={() => login()}
+                    >
+                      Sign In
+                    </button>
+                  )}
+              </Container>
+
             </div>
 
           </div>
@@ -71,7 +105,6 @@ class App extends Component {
 
 
         </div>
-
 
 
         <div class="container mx-auto flex mt-3 text-sm leading-normal">
@@ -105,7 +138,7 @@ class App extends Component {
               </div>
             </div>
 
-            {/* BUTTON FUNCTION */}
+            {/* button FUNCTION */}
             <div class="w-1/2 px-3">
               <div class=" max-w-xl mx-auto my-4 border-b-8">
                 <article class="border-t border-b border-gray p-2 hover:bg-white flex flex-wrap items-start cursor-pointer">
@@ -150,6 +183,8 @@ class App extends Component {
               </div>
 
 
+
+
               <PostView
                 canEdit={() => true}
                 onEdit={(post) => this.setState({ editing: post })}
@@ -160,6 +195,8 @@ class App extends Component {
                   onClose={() => this.setState({ editing: null })}
                 />
               )}
+
+
               <Tweet />
             </div>
 
@@ -178,4 +215,5 @@ class App extends Component {
   }
 }
 
-export default App;
+//export default App;
+export default withAuth(App);

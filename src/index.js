@@ -4,11 +4,14 @@ import './index.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Security, ImplicitCallback } from '@okta/okta-react';
 
-
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ApolloProvider } from 'react-apollo';
 import client from './apollo';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+//to tell dotenv to read in the environment variables:
+//require('dotenv').config({ path: '.env.local' });
+
 //import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(

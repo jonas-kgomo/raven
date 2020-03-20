@@ -31,9 +31,10 @@ const PostEditor = ({ post, onClose }) => (
 
     <FinalForm
 
-      onSubmit={async ({ id, author, body }) => {
-        const input = { id, author, body };
-
+      //     onSubmit={async ({ id, author, body }) => {
+      //       const input = { id, author, body };
+      onSubmit={async ({ id, body }) => {
+        const input = { id, body };
         await client.mutate({
           variables: { input },
           mutation: SUBMIT_POST,
@@ -51,10 +52,10 @@ const PostEditor = ({ post, onClose }) => (
 
             <div class="modal-show top-40  ml-auto mr-auto w-1/3 mt-40  bg-gray-800 cursor-pointer rounded-lg flex flex-col items-center text-sm z-50">
               <ModalHeader toggle={onClose} >
-                {post.id ? 'Edit Post' : 'New Post'}
+                {post.id ? 'Edit' : 'New Raven'}
               </ModalHeader>
               <ModalBody >
-              
+
                 <FormGroup >
                   <Label>Author</Label>
                   <Field
@@ -80,7 +81,7 @@ const PostEditor = ({ post, onClose }) => (
               </ModalBody>
               <ModalFooter class="justify-between">
                 <Button type="submit" disabled={pristine} color="primary" class="bg-blue-400 rounded-full text-blue-100 inline-block py-2 px-4">Save</Button>
-     
+
                 <Button color="secondary" onClick={onClose}>Cancel</Button>
               </ModalFooter>
             </div>
