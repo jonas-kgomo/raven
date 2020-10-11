@@ -1,24 +1,11 @@
-This project uses [Create React App](https://github.com/facebook/create-react-app), Tailswind, Okta, GraphQL, Express and Node.js
-
-
-
 ## Raven
+This project uses [Create React App](https://github.com/facebook/create-react-app), `Tailswind, Okta, GraphQL, Express and Node.js`
 
-
-### TODO
-
-- click = i'm here [sound](https://youtu.be/eZ5iippq3rA)
-
-
+### INSPO
 
 > Inspired by twitter, arXiv and [Qiita](https://qiita.com/), [sanity-preserver](https://www.youtube.com/watch?v=S2GY3gh6qC8&feature=youtu.be), [cent](https://beta.cent.co/)
 
-GitHub Flavored Markdown with Tailwind CSS components: 
-
-
-[Tailwindcss](https://github.com/iandinwoodie/github-markdown-tailwindcss)
-
-
+> GitHub Flavored Markdown with Tailwind CSS components: [Tailwindcss](https://github.com/iandinwoodie/github-markdown-tailwindcss)
 
 ![alt text](https://github.com/jonas-kgomo/raven/blob/master/src/icons/raven.png "Raven")
 
